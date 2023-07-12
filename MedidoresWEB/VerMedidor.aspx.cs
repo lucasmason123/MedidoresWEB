@@ -22,8 +22,18 @@ namespace MedidoresWEB
         private void CargaGrilla()
         {
             List<Medidor> medidor = medidorDAL.ObtenerMedidor();
-            this.grillaMedidores.DataSource = medidor;
-            this.grillaMedidores.DataBind();
+            this.GrillaMedidor.DataSource = medidor;
+            this.GrillaMedidor.DataBind();
+        }
+
+        protected void GrillaMedidor_RowCommand(object sender, GridViewCommandEventArgs e)
+        {
+            if (e.CommandName == "eliminar")
+            {
+                string nroMedidor = Convert.ToString(e.CommandArgument);
+                CargaGrilla();
+
+            }
         }
     }
 }

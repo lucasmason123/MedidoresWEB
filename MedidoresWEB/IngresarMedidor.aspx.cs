@@ -22,10 +22,10 @@ namespace MedidoresWEB
         protected void AgregarMedidorBtn_Click(object sender, EventArgs e)
         {
             //Obtener los datos del formulario
-            int nroMedidor = Convert.ToInt32(this.numeroMedidortxt);
-            double valorConsumoMedidor = Convert.ToInt32(this.valorConsumotxt);
+            int nroMedidor = Convert.ToInt32(numeroMedidortxt.Text.Trim());
+            double valorConsumoMedidor = Convert.ToDouble(valorConsumotxt.Text.Trim());
             DateTime fechaMedidor = this.fechaMedidor.SelectedDate;
-            int tipoMedidor = Convert.ToInt32(this.tipoMedRbl.SelectedValue);
+            int tipoMedidor = Convert.ToInt32(tipoMedRbl.SelectedValue);
 
             Medidor medidor = new Medidor()
             {

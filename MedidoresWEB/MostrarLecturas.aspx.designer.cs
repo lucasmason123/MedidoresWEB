@@ -13,5 +13,23 @@ namespace MedidoresWEB
 
     public partial class MostrarLecturas
     {
+
+        /// <summary>
+        /// Control medidorDdl.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList medidorDdl;
+
+        /// <summary>
+        /// Control GrillaLectura.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView GrillaLectura;
     }
 }

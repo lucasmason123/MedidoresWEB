@@ -13,5 +13,10 @@ namespace MedidoresWEB
         {
 
         }
+
+        protected void GrillaLectura_RowCommand(object sender, GridViewCommandEventArgs e)
+        {
+
+        }
     }
 }
