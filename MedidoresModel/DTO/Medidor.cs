@@ -11,11 +11,11 @@ namespace MedidoresModel
         private int nroMedidor;
         private DateTime fechaMedidor;
         private double valorConsumoMedidor;
-        private string tipoMedidor;
+        private int tipoMedidor;
 
         public int NroMedidor { get => nroMedidor; set => nroMedidor = value; }
         public DateTime FechaMedidor { get => fechaMedidor; set => fechaMedidor = value; }
         public double ValorConsumoMedidor { get => valorConsumoMedidor; set => valorConsumoMedidor = value; }
-        public string TipoMedidor { get => tipoMedidor; set => tipoMedidor = value; }
+        public int TipoMedidor { get => tipoMedidor; set => tipoMedidor = value; }
     }
 }

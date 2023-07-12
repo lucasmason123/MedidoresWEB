@@ -24,6 +24,19 @@ namespace MedidoresWEB
             //Obtener los datos del formulario
             int nroMedidor = Convert.ToInt32(this.numeroMedidortxt);
             double valorConsumoMedidor = Convert.ToInt32(this.valorConsumotxt);
+            DateTime fechaMedidor = this.fechaMedidor.SelectedDate;
+            int tipoMedidor = Convert.ToInt32(this.tipoMedRbl.SelectedValue);
+
+            Medidor medidor = new Medidor()
+            {
+                NroMedidor = nroMedidor,
+                FechaMedidor = fechaMedidor,
+                ValorConsumoMedidor = valorConsumoMedidor,
+                TipoMedidor = tipoMedidor
+            };
+            medidorDAL.AgregarMedidor(medidor);
+
+            Response.Redirect("VerMedidor.aspx");
         }
     }
 }
